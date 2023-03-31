@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+
+  /* Note: we need to state the height for align-items to take effect. */
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  background-color: bisque;
+  font-family: cursive;
+}
+
+.form {
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  border: solid 4px green;
+  color: green;
+}
+
+.input::placeholder {
+  color: lightgrey;
+  font-family: cursive;
+}
+
+.btn {
+  background-color: green;
+  color: white;
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  font-family: cursive;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(90%);
+}
+
+/* Note: 
+1. cursor: pointer; = When we place the cursor near the icon, it will change to a pointer or clickable pointer
+2. border-radius: to give curves near edges of a element.
+3. width: 100%; gives a block element the full size of the line.
+4. box-shadow: horizontal-axis, verical-axis, 
+5. .btn:hover {
+  filter: brightness(90%);
+} = When we put our pointer there, the brightness decreases, which makes us feel as if we are about to click it, or inside it.
+... */
+
+/* Note: Pseudo-classes vs Pseudo-elements
+
+
+
+Pseudo-classes (:) allow you to style the different states of an element e.g. when you hover over it, when it is disabled, when it is the first child of its parent, etc.
+
+Pseudo-elements (::) allow you to style different parts of an element e.g. the first line, the first letter, inserting content before or after, etc.
+
+Originally they all used a single colon, but CSS3 introduced the double colon to separate the two. */
